@@ -1,0 +1,9 @@
+.navbar {
+    display: flex;
+}
+
+.nabvar-items-container {
+    display: flex;
+    position: absolute;
+    right: 0px;
+}

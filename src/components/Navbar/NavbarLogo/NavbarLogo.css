@@ -1,0 +1,52 @@
+.navbar-logo {
+    overflow: hidden;
+    width: 35%;
+    height: 200px;
+    min-width: 320px;
+}
+
+.aguayo-container {
+    width: 50%;
+    height: 200px;
+    position: relative;
+}
+
+.aguayo-img {
+    width: 400px;
+    height: 80px;
+    rotate: -70deg;
+    margin-left: -50px;
+}
+
+.logo-15-img {
+    width: 300px;
+    height: 150px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(12, 207, 207, 0.664);
+    position: absolute;
+    top: 25px;
+    left: 125px
+}
+
+@media (max-width: 1024px){
+    .navbar-logo {
+        width: 100%;
+        height: 150px;
+    }
+
+    .aguayo-container {
+        height: 150px;
+    }
+    
+    .aguayo-img {
+        margin-left: -75px;
+    }
+
+    .logo-15-img {
+        width: 240px;
+        height: 120px;
+        position: absolute;
+        top: 15px;
+        left: 100px
+    }
+}
