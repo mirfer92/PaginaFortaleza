@@ -1,52 +1,27 @@
-.navbar-logo {
+.navbar__logo {
     overflow: hidden;
     width: 35%;
-    height: 200px;
-    min-width: 320px;
-}
-
-.aguayo-container {
-    width: 50%;
-    height: 200px;
-    position: relative;
-}
-
-.aguayo-img {
-    width: 400px;
-    height: 80px;
-    rotate: -70deg;
-    margin-left: -50px;
-}
-
-.logo-15-img {
-    width: 300px;
     height: 150px;
-    border-radius: 20px;
-    box-shadow: 5px 5px 5px rgba(12, 207, 207, 0.664);
-    position: absolute;
-    top: 25px;
-    left: 125px
+    min-width: 420px;
 }
 
-@media (max-width: 1024px){
-    .navbar-logo {
-        width: 100%;
-        height: 150px;
-    }
+.navbar__logo__aguayoContainer {
+    width: 50%;
+    height: 100%;
+}
 
-    .aguayo-container {
-        height: 150px;
-    }
-    
-    .aguayo-img {
-        margin-left: -75px;
-    }
+.navbar__logo__aguayoContainer__image {
+    width: 250px;
+    height: 100px;
+    rotate: -70deg;
+    position: relative;
+    bottom: -20%;
+}
 
-    .logo-15-img {
-        width: 240px;
-        height: 120px;
-        position: absolute;
-        top: 15px;
-        left: 100px
-    }
+.navbar__logo__aguayoContainer__logo15 {
+    border-radius: 50px;
+    box-shadow: 15px 15px 15px var(--aqua-fortaleza);
+    transform: scale(0.26, 0.20) translateX(-73%) translateY(-1675px);
+    position: absolute;
+    z-index: 1;
 }

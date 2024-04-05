@@ -1,0 +1,10 @@
+.instagramGallery{
+    margin: 50px auto;
+    width: 90%;
+    display: flex;
+    gap: 15px 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    min-height: 200px;
+}

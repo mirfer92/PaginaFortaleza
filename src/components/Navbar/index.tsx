@@ -31,8 +31,8 @@ function Navbar() {
     return (
       <nav className="navbar">
         <NavbarLogo />
-        <div className="nabvar-items-container">
-            {navbarItems.map(item => <NavBarItem title={item.title} href={item.url}/>)}
+        <div className="navbar__items">
+            {navbarItems.map(item => <NavBarItem key={item.title} title={item.title} href={item.url}/>)}
         </div>
       </nav>
     )

@@ -1,9 +1,10 @@
 .navbar {
     display: flex;
+    width: 100%;
 }
 
-.nabvar-items-container {
+.navbar__items {
+    width: 65%;
+    min-width: 750px;
     display: flex;
-    position: absolute;
-    right: 0px;
 }
