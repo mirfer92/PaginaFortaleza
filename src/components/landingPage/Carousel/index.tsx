@@ -1,5 +1,5 @@
 import './Carousel.css';
-import main from '../../assets/main.jpg';
+import main from '../../../assets/main.jpg';
 
 function Carousel() {
     return (

@@ -1,0 +1,43 @@
+.legend{
+    width: 90vw;
+    height: 30vw;
+    margin: 0 auto;
+    margin-top: 50px;
+    color: #fff;
+    font-family: "Kaushan Script", cursive;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.legend__textContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 35px;
+    align-items: center;
+    width: 50%;
+}
+
+.legend__textContainer__text{
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.legend__textContainer__author{
+    font-size: 1.4em;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.legend__picture{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.legend__img{
+    width: 100%;
+    height: 100%;
+    object-position: 50px;
+}

@@ -1,0 +1,5 @@
+.footer__links__item{
+    text-decoration: none;
+    transition-property: color font-size;
+    transition-duration: 0.5s;
+}

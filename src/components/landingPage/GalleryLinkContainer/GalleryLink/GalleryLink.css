@@ -1,0 +1,29 @@
+.galleriesContainer__link a{
+    text-decoration: none;
+}
+
+.galleriesContainer__link__container{
+    width: 32vw;
+    height: 32vw;
+    overflow: hidden;
+    object-fit: fill;
+    background-size: cover;
+    background-position: center;
+}
+
+.galleriesContainer__link__vignette {
+    display: block;
+    width: 32vw;
+    height: 32vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.galleriesContainer__link__title{
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.8em;
+    text-shadow: 1px 1px 2px black;
+    text-align: center;
+}

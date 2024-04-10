@@ -1,0 +1,23 @@
+.footer__info__item{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.footer__info__item__icon{
+    width: 30px;
+    height: 30px;
+}
+
+.footer__info__item__img{
+    width: 100%;
+    height: 100%;
+}
+
+.footer__info__item__text{
+    font-size: 1.2em;
+}
+
+.footer__info__item__textContainer{
+    width: 350px;
+}

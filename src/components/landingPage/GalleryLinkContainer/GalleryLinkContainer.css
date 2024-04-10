@@ -1,0 +1,9 @@
+.galleriesContainer{
+    width: 100%;
+    min-width: 320px;
+    margin-top: 50px;
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}

@@ -1,0 +1,14 @@
+.footer__socialMedia__item{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin-top: 10px;
+    transition-property: box-shadow;
+    transition-duration: .5s;
+}
+
+.footer__socialMedia__item__icon{
+    width: 100%;
+    height: 100%;
+}

@@ -1,6 +1,5 @@
 .instagramGallery__item{
-    width: 400px;
-    height: 400px;
+    flex: 400px;
 }
 
 .instagramGallery__item__image{
