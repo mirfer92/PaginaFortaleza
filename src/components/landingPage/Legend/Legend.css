@@ -4,7 +4,7 @@
     margin: 0 auto;
     margin-top: 50px;
     color: #fff;
-    font-family: "Kaushan Script", cursive;
+    font-family: var(--elegant-font), cursive;
     display: flex;
     justify-content: center;
     gap: 25px;

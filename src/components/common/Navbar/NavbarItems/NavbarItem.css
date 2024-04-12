@@ -9,5 +9,6 @@
     padding-top: 25px;
     align-self: flex-end;
     color: var(--aqua-fortaleza);
+    transition-property: color;
     transition-duration: .5s;
 }

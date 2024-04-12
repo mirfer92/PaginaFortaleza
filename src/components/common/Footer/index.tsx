@@ -10,6 +10,7 @@ import './Footer.css'
 import InfoItem from './InfoItem';
 import LinkItem from './LinkItem';
 import SocialMediaItem from './SocialMediaItem';
+import { removeCurrentUrlPath } from '../../../utils/commonUtils';
 
 function Footer() {
     const infoItems = [
@@ -27,28 +28,7 @@ function Footer() {
         }
     ];
 
-    const linkItems = [
-        {
-            title: 'nosotros',
-            url: '#'
-        },
-        {
-            title: 'presentaciones',
-            url: '#'
-        },
-        {
-            title: 'galería',
-            url: '#'
-        },
-        {
-            title: 'academia',
-            url: '#'
-        },
-        {
-            title: 'contáctenos',
-            url: '#'
-        },
-    ];
+    const linkItems = removeCurrentUrlPath();
 
     const socialMediaItems = [
         {

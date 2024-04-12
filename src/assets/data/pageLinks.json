@@ -1,0 +1,26 @@
+[
+    {
+        "title": "inicio",
+        "url": "/"
+    },
+    {
+        "title": "nosotros",
+        "url": "#"
+    },
+    {
+        "title": "presentaciones",
+        "url": "#"
+    },
+    {
+        "title": "galerías",
+        "url": "#"
+    },
+    {
+        "title": "academia",
+        "url": "#"
+    },
+    {
+        "title": "contáctenos",
+        "url": "/contacto"
+    }
+]

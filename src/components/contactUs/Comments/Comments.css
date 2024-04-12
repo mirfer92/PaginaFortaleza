@@ -1,0 +1,18 @@
+.comments{
+    width: 80%;
+    height: 450px;
+    margin: 50px auto;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.comments__form{
+    width: 48%;
+    background-color: forestgreen;
+}
+
+.comments__picture{
+    width: 48%;
+    background-color: crimson;
+}
