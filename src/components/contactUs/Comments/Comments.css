@@ -1,18 +1,164 @@
 .comments{
     width: 80%;
-    height: 450px;
     margin: 50px auto;
     display: flex;
     gap: 10px;
     justify-content: space-between;
+    align-items: center;
+}
+
+.comments__form__title{
+    text-align: center;
 }
 
 .comments__form{
     width: 48%;
-    background-color: forestgreen;
+}
+
+.comments__form__form{
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+}
+
+.comments__form__item{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.comments__form__item label{
+    font-size: 0.8em;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.comments__form__item input,
+.comments__form__item textarea {
+    background-color: black;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid var(--aqua-fortaleza);
+    color: #ffffff;
+    width: 70%;
+    align-self: center;
+    transition-property: width;
+    transition-duration: 0.5s;
+    font-family: inherit;
+    font-size: 1em;
+}
+
+.comments__form__item textarea {
+    font-size: 0.8em;
+}
+
+.comments__form__item .PhoneInput{
+    display: flex;
+    justify-content: center;
+}
+
+.comments__form__item .PhoneInputInput{
+    flex: none;
+    width: 60%;
+}
+
+.comments__form__item > input:focus,
+.comments__form__item > textarea:focus{
+    width: 85%;
+}
+
+.comments__form__item .PhoneInputInput:focus{
+    width: 75%;
+}
+
+.comments__form__item span{
+    font-size: 0.7em;
+    color:#bbbbbb;
+    font-style: italic;
+    margin-left: 25px;
+}
+
+.comments__form__requiredFields{
+    margin-top: 30px;
+    font-size: 0.7em;
+}
+
+.comments__form_buttonContainer{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.comments__form__button{
+    width: 30%;
+    padding: 5px;
+    margin-top: 10px;
+    background-color: #000000;
+    border: 1px solid #cccccc;
+    border-radius: 20px;
+    color: #ffffff;
+    text-align: center;
+    font-family: inherit;
+    font-size: 1.2em;
+    font-weight: 500;
+    transition-property: transform background-color;
+    transition-duration: 0.5s;
+}
+
+.comments__form__button:hover{
+    cursor: pointer;
+    transform: scale(1.15);
+}
+
+.comments__form__button[type="submit"]:hover{
+    background-color: var(--aqua-fortaleza);
+}
+
+.comments__form__button[type="reset"]:hover{
+    background-color: #666666;
 }
 
 .comments__picture{
     width: 48%;
-    background-color: crimson;
+}
+
+.comments__picture img{
+    width: 100%;
+}
+
+.comments__form__success{
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.comments__form__success__comeBack{
+    margin-top: 40px;
+}
+
+.comments__form__success__icon{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    margin-left: 5px;
+}
+
+.comments__form__success__logo{
+    margin-top: 20px;
+    width: 200px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px var(--aqua-fortaleza);
+}
+
+.comments__form__success__logo img{
+    width: 100%;
+    margin-top: -10px;
+}
+
+.comments__form__success__comeBack:hover{
+    background-color: var(--aqua-fortaleza);
 }

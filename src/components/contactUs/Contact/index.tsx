@@ -1,34 +1,37 @@
 import './Contact.css'
-import { useEffect, useRef, useState } from "react";
+import {
+    RiMapPinFill,
+    RiMailFill,
+    RiWhatsappFill,
+    RiFacebookCircleFill,
+    RiInstagramFill,
+    RiTiktokFill } from "@remixicon/react";
+
+import MyMap from './Map';
+import Item from './Item';
+import LinkItem from './LinkItem';
 
 function Contact() {
-    const ref = useRef<HTMLDivElement>(null);
-    const [map, setMap] = useState<google.maps.Map>();
-
-    useEffect(() => {
-        if (ref.current && !map) {
-            const mapObj = new window.google.maps.Map(ref.current, {});
-            setMap(mapObj);
-        }
-    }, [ref, map]);
     return(
-        // <section className="contact">
-            <div className='contact__map' ref={ref}/>
-        //     <div className="contact__info">
-        //         <h1>Academia de Danza "Fortaleza"</h1>
-        //         <h2>
-        //         ¡Pasión que se baila, cultura que se siente!
-        //         </h2>
+        <section className="contact">
+            <MyMap/>
+            <div className="contact__info">
+                <h1>Academia de Danza "Fortaleza"</h1>
+                <h2>
+                ¡Pasión que se baila, cultura que se siente!
+                </h2>
 
-        //         <h3>Calle Ecuador #365 entre Av. Ayacucho y C. Junin</h3>
-        //         <h3>Cochabamba - Bolivia</h3>
-        //         <h3>
-        //             +591 76453113 <br />
-        //             +591 76476476
-        //         </h3>
-        //         <h3>jczero023@gmail.com</h3>
-        //     </div>
-        // </section>
+                <Item icon={RiMapPinFill} text={["Calle Ecuador #178 entre Av. Ayacucho y C. Junin", "Cochabamba - Bolivia"]}/>
+                <Item icon={RiWhatsappFill} text={["+591 76453113","+591 65653232"]}/>
+                <Item icon={RiMailFill} text={["jczero023@gmail.com"]}/>
+
+                <div className="contact__info__linksContainer">
+                    <LinkItem icon={RiFacebookCircleFill} text="Academia de Danza Fortaleza" href="https://www.facebook.com/AcademiaDeDanzaFortaleza"/>
+                    <LinkItem icon={RiInstagramFill} text="academia_fortaleza01" href="https://www.instagram.com/academia_fortaleza01"/>
+                    <LinkItem icon={RiTiktokFill} text="academia.fortaleza_" href="https://www.tiktok.com/@academia.fortaleza_"/>
+                </div>
+            </div>
+        </section>
     )
 }
 

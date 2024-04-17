@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './NavBarItem.css';
+import "./NavbarItem.css";
 
 function NavBarItem ({title, href}: {title: string, href: string}) {
 

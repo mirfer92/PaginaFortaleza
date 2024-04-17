@@ -10,13 +10,17 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@remixicon/react": "^4.2.0",
     "axios": "^1.6.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-error-boundary": "^4.0.13",
+    "react-hook-form": "^7.51.3",
+    "react-phone-number-input": "^3.3.12",
     "react-router-dom": "^6.22.3"
   },
   "devDependencies": {
+    "@types/google-map-react": "^2.1.10",
     "@types/googlemaps": "^3.43.3",
     "@types/react": "^18.2.43",
     "@types/react-dom": "^18.2.17",

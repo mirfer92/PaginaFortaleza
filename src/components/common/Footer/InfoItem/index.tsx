@@ -1,7 +1,8 @@
+import { RemixiconComponentType } from '@remixicon/react';
 import './InfoItem.css';
 
 interface InfoItemProps {
-    icon: any,
+    icon: RemixiconComponentType,
     text: string | string[]
 }
 
@@ -9,7 +10,7 @@ function InfoItem(props: InfoItemProps){
     return (
         <div className="footer__info__item">
             <figure className="footer__info__item__icon">
-                <img src={props.icon} alt="" className="footer__info__item__img" />
+                <props.icon size={0} className="footer__info__item__img" />
             </figure>
             <div className="footer__info__item__textContainer">
                 {

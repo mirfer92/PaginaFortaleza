@@ -6,6 +6,10 @@ export function camelize(str: string) {
     }).replace(/\s+/g, '');
 };
 
+export function capitalize(str: string) {
+    return str.replace(/(^\w{1})|(\s+\w{1})/g, letter => letter.toUpperCase());
+};
+
 /**
  * given an array of strings representing url paths from '../assets/data/pageLinks.json' file; gets the current url's path in the browser and remove it from the list if it's found.
  * return - the array of urls where the current Url path was removed.

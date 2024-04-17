@@ -1,10 +1,11 @@
 import { useState } from 'react';
 import './SocialMediaItem.css';
+import { RemixiconComponentType } from '@remixicon/react';
 
 interface SocialMediaItemProps{
     name: string,
     url: string,
-    icon: any
+    icon: RemixiconComponentType
 }
 
 function SocialMediaItem(props: SocialMediaItemProps) {
@@ -21,7 +22,7 @@ function SocialMediaItem(props: SocialMediaItemProps) {
                 } : {}
             }
         >
-            <img src={props.icon} alt={`${props.name} icon`} className={`footer__socialMedia__item__icon ${props.name}`} />
+            <props.icon size={0} className={`footer__socialMedia__item__icon ${props.name}`} />
         </a>
     )
 }

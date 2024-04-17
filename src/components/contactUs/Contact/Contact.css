@@ -8,18 +8,14 @@
     justify-content: space-between;
 }
 
-.contact__map{
-    width: 48%;
-    height: 250px;
-}
-
 .contact__info{
     width: 48%;
+    min-width: 391px;
     font-family: var(--elegant-font);
     color: #fff;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
 }
 
 .contact__info h1{
@@ -29,10 +25,15 @@
 
 .contact__info h2{
     font-size: 1.3em;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
-.contact__info h3{
-    margin-top: 20px;
-    font-size: 1.1em;
+.contact__info__linksContainer{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-evenly;
+    gap: 15px;
 }

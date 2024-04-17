@@ -1,0 +1,18 @@
+.contact__info__item{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact__info__list{
+    font-size: 1.1em;
+    list-style: none;
+    padding: 0;
+}
+
+.contact__info__icon{
+    width: 25px;
+    height: 25px;
+}

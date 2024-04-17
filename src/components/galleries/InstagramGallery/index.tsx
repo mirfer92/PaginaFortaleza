@@ -1,4 +1,4 @@
-import useApiData from "../../hooks/useApiData";
+import useApiData from "../../../hooks/useApiData.ts";
 import GalleryItem from "./GalleryItem/index.tsx";
 import GalleryMessage from "./GalleryMessage/index.tsx";
 import './InstagramGallery.css'

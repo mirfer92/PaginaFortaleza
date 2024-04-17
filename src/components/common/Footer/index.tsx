@@ -1,10 +1,12 @@
 import logo from '../../../assets/logo_main.jpg';
-import homeIcon from '../../../assets/bxs-home.svg';
-import mapIcon from '../../../assets/bxs-map.svg';
-import whatsappIcon from '../../../assets/bxs-whatsapp.svg';
-import fbIcon from '../../../assets/bxl-facebook.svg';
-import instaIcon from '../../../assets/bxl-instagram.svg';
-import ttIcon from '../../../assets/bxl-tiktok.svg';
+
+import {
+    RiHome3Fill,
+    RiMapPinFill,
+    RiWhatsappFill,
+    RiFacebookCircleFill,
+    RiInstagramFill,
+    RiTiktokFill } from "@remixicon/react";
 import './Footer.css'
 
 import InfoItem from './InfoItem';
@@ -15,15 +17,15 @@ import { removeCurrentUrlPath } from '../../../utils/commonUtils';
 function Footer() {
     const infoItems = [
         {
-            icon: homeIcon,
-            text: 'Calle Ecuador #325 entre Av. Ayacucho y C. Junin'
+            icon: RiHome3Fill,
+            text: 'Calle Ecuador #178 entre Av. Ayacucho y C. Junin'
         },
         {
-            icon: mapIcon,
+            icon: RiMapPinFill,
             text: 'Cochabamba - Bolivia'
         },
         {
-            icon: whatsappIcon,
+            icon: RiWhatsappFill,
             text: ['+591 76453113', '+591 65653232']
         }
     ];
@@ -33,17 +35,17 @@ function Footer() {
     const socialMediaItems = [
         {
             name: 'facebook',
-            icon: fbIcon,
+            icon: RiFacebookCircleFill,
             url: 'https://www.facebook.com/AcademiaDeDanzaFortaleza',
         },
         {
             name: 'tiktok',
-            icon: ttIcon,
+            icon: RiTiktokFill,
             url: 'https://www.tiktok.com/@academia.fortaleza_'
         },
         {
             name: 'instagram',
-            icon: instaIcon,
+            icon: RiInstagramFill,
             url: 'https://www.instagram.com/academia_fortaleza01'
         }
     ]
