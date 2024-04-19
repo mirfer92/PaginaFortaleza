@@ -1,4 +1,4 @@
-import logo_instagram from '../../../assets/bxl-instagram-alt.svg';
+import {RiInstagramFill} from '@remixicon/react';
 import './GalleryMessage.css';
 
 interface GalleryMessageProps {
@@ -22,7 +22,7 @@ function GalleryMessage (props: GalleryMessageProps) {
                     href="https://www.instagram.com/academia_fortaleza01/"
                 >
                     Academia Fortaleza en Instagram&nbsp; 
-                    <img className="instagramGalleryMessage__message__link__icon" src={logo_instagram} alt="ícono de Instagram" />
+                    <RiInstagramFill size={0} className="instagramGalleryMessage__message__link__icon"/>
                 </a>
             </h3>
         </section>

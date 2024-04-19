@@ -134,6 +134,10 @@
     align-items: center;
 }
 
+.comments__form__success{
+    text-align: center;
+}
+
 .comments__form__success__comeBack{
     margin-top: 40px;
 }

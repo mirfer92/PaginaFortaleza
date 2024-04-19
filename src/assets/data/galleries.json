@@ -1,0 +1,18 @@
+{
+    "external" : [
+        {
+            "key": "instagram",
+            "title": "Síguenos como \"academia_fortaleza01\" en Instagram",
+            "legend": "Somos Academia de Danza Fortaleza \n ¡Pasión que se baila, cultura que se siente! Bienvenidos a nuestro ballet folklórico boliviano. Te invitamos a que nos sigas como \"academia_fortaleza01\".\n Acá te presentamos algunas de nuestras publicaciones desde nuestra página en Instagram",
+            "pageName": "academia_fortaleza01",
+            "url": "https://www.instagram.com/academia_fortaleza01"
+        }
+    ],
+    "static" : [
+        {
+            "key": "herencias",
+            "title": "Gala Herencias - Julio 2023",
+            "legend": "a description to do"
+        }
+    ]
+}

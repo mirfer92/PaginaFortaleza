@@ -8,17 +8,17 @@ import GalleryLink from './GalleryLink';
 function GalleryLinkContainer () {
     const galleries = [
         {
-            url: 'herencias',
+            url: 'galeria/herencias',
             title: 'Herencias',
             background: gal1
         },
         {
-            url: 'instagram',
+            url: 'galeria/externa/instagram',
             title: 'Instagram',
             background: gal2
         },
         {
-            url: 'fin-de-año-2023',
+            url: 'galeria/fin-de-año-2023',
             title: 'Gala de Fin de Año 2023',
             background: gal3
         },

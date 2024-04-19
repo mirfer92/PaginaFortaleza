@@ -15,12 +15,12 @@ async function sendRequest(
             payload,
             params,
             headers,
-            timeout: 2500
+            timeout: 5000
         };
         const response = await axios.request(config)
         .catch((error: Error | AxiosError) => {
             if (axios.isAxiosError(error))  {
-                console.error(`errorResponse: ${JSON.stringify(error.response?.data)}`);
+                console.error(`errorResponse: ${JSON.stringify(error)}`);
                 throw new Error(error.message);
             }
           });

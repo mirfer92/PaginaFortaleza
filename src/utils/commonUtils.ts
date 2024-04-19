@@ -1,4 +1,12 @@
 import pathsData from '../assets/data/pageLinks.json';
+import galleriesData from '../assets/data/galleries.json';
+
+interface GalleryData {
+    key: string,
+    title: string,
+    legend: string,
+    url?: string
+}
 
 export function camelize(str: string) {
     return str.replace(/(?:^\w|[A-Z]|\b\w)/g, function(word, index) {
@@ -6,6 +14,11 @@ export function camelize(str: string) {
     }).replace(/\s+/g, '');
 };
 
+/**
+ * puts on Capital the first letter of each word in a string. i.e. hola mundo! => Hola Mundo!
+ * @param str the string to be capitalized
+ * @returns the capitalized string
+ */
 export function capitalize(str: string) {
     return str.replace(/(^\w{1})|(\s+\w{1})/g, letter => letter.toUpperCase());
 };
@@ -24,4 +37,13 @@ export function removeCurrentUrlPath() {
         pathsArray.splice(index, 1);
     }
     return pathsArray;
+}
+
+export function getGalleryDataByKey(key: string, isExternal = true): GalleryData {
+    const type = isExternal ? 'external' : 'static';
+    const galleryData = galleriesData[type].find(
+        (value) => value.key == key
+    );
+    if (galleryData) return galleryData;
+    throw new Error(`The Gallery ${key} is not available in the page.`);
 }

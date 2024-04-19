@@ -1,0 +1,50 @@
+.galleryThemeSelector{
+    margin: 0 auto;
+    margin-top: 40px;
+    width: fit-content;
+    height: 3.5em;
+    border: 3px solid var(--aqua-fortaleza);
+    border-radius: 30px;
+    padding: 0 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center
+}
+
+.galleryThemeSelector__option{
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    transition-property: font-size color;
+    transition-timing-function: ease-in-out;
+}
+
+.galleryThemeSelector__option__radio{
+    font: inherit;
+    width: 1.2em;
+    height: 1.2em;
+    border-radius: 50%;
+    margin-right: 3px;
+    vertical-align: -.20em;
+    display: grid;
+    place-content: center;
+    cursor: inherit;
+    border: 3px solid var(--aqua-fortaleza);
+    color: black;
+}
+
+.galleryThemeSelector__option__radio::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 0.5s transform ease-in-out;
+    box-shadow: inset 1em 1em var(--aqua-fortaleza);
+}
+
+.galleryThemeSelector__option__radio:checked::before {
+    transform: scale(1);
+}

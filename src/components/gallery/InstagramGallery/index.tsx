@@ -28,7 +28,7 @@ function InstagramGallery() {
             </section>
         )
     }
-    const gallery = data.data.slice(0, 6);    
+    const gallery = data.data.length > 12 ? data.data.slice(0, 12) : data.data; 
     return (
         <section className="instagramGallery">
             {
