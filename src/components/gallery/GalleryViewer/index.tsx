@@ -2,7 +2,7 @@ import useGalleryTheme from "../../../state/theme";
 import GalleryMessage from "./GalleryMessage";
 import CarouselGallery from "./Theme/Carousel";
 import GridGallery from "./Theme/Grid";
-import { GalleryData } from "../../../assets/types/ExternalGalleryData";
+import { GalleryData } from "../../../assets/types/GalleryData";
 import useApiData from "../../../hooks/useApiData";
 import useStaticGalleryData from "../../../hooks/useStaticGalleryData";
 
@@ -15,7 +15,6 @@ interface GalleryViewerParams {
 
 function GalleryViewer(props: GalleryViewerParams){
     const { theme } = useGalleryTheme();
-
     const {
         data,
         isLoading,
@@ -36,11 +35,10 @@ function GalleryViewer(props: GalleryViewerParams){
     const reloadGallery = () => {
         setIsLoading(true);
     }
-
-    if(props.isExternal && !isLoading) {
-        galleryDataObj = data.data.length > 12 ?
-            data.data.slice(0, 12) :
-            data.data;
+    if(props.isExternal && !isLoading && data) {
+        galleryDataObj = data.length > 12 ?
+            data.slice(0, 12) :
+            data;
     } else {
         galleryDataObj = data;
     }

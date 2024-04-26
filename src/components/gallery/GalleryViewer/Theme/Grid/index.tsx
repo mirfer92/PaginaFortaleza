@@ -1,5 +1,5 @@
 import GalleryItem from "./GalleryItem";
-import { GalleryData } from "../../../../../assets/types/ExternalGalleryData";
+import { GalleryData } from "../../../../../assets/types/GalleryData";
 import './GridGallery.css'
 
 interface GalleryDataProps {

@@ -1,6 +1,6 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { GalleryData } from "../../../../../assets/types/ExternalGalleryData";
+import { GalleryData } from "../../../../../assets/types/GalleryData";
 import GalleryItem from "./GalleryItem";
 import './CarouselGallery.css';
 

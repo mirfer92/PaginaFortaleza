@@ -1,7 +1,13 @@
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
 
-const useGalleryTheme = create(
+interface ThemeState {
+    theme: string
+    setGrid: () => void
+    setCarousel: () => void
+}
+
+const useGalleryTheme = create<ThemeState>()(
     persist(
         (set) => ({
             theme: 'grid',

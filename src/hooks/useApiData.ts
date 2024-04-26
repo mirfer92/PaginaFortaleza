@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { sendRequest } from "../utils/apiRequestManager";
+import { GalleryData } from '../assets/types/GalleryData';
 
 interface RequestProps {
     url: string,
@@ -10,7 +11,7 @@ interface RequestProps {
 }
 
 const useApiData = (props: RequestProps) => {
-    const [data, setData] = useState<any[]>([]); 
+    const [data, setData] = useState<GalleryData[]>([]); 
     const [isLoading, setIsLoading] = useState<boolean>(true);
     const [error, setError] = useState<any>();
     useEffect(() => {
@@ -19,7 +20,7 @@ const useApiData = (props: RequestProps) => {
                 const response = await sendRequest(
                     props.url, props.method, props.payload, props.params, props.headers
                 );
-                setData(response?.data);
+                setData(response?.data.data);
                 setIsLoading(false);
             } catch(error: any) {
                 setError(error);

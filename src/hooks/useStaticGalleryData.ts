@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
+import { GalleryData } from '../assets/types/GalleryData';
 
 const useStaticGalleryData = (key: string, files: string[] | undefined) => {
-    const [data, setData] = useState<{id: string, media_url: string}[]>([]); 
+    const [data, setData] = useState<GalleryData[]>([]); 
     const [isLoading, setIsLoading] = useState<boolean>(true);
     const [error, setError] = useState<any>();
     useEffect(() => {
