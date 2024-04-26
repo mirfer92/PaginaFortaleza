@@ -12,7 +12,27 @@
         {
             "key": "herencias",
             "title": "Gala Herencias - Julio 2023",
-            "legend": "a description to do"
+            "legend": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste quam, dolores quos eaque deserunt.\n Aperiam sed rem reiciendis dolore aspernatur ad asperiores quae omnis labore culpa ut magnam accusantium eligendi repellendus harum.\n Voluptate asperiores saepe dignissimos dolorum quaerat, ducimus dolore ipsam quo quae nobis totam eaque beatae voluptas, culpa facere quis soluta aliquid voluptates.\n Ipsum voluptates vero quis quos accusamus?",
+            "files": [
+                "her1.jpg",
+                "her2.jpg",
+                "her3.jpg",
+                "her4.jpg",
+                "her5.jpg"
+            ]
+        },
+        {
+            "key": "fin-de-año-2023",
+            "title": "Fin de Año - Diciembre 2023",
+            "legend": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste quam, dolores quos eaque deserunt.\n Aperiam sed rem reiciendis dolore aspernatur ad asperiores quae omnis labore culpa ut magnam accusantium eligendi repellendus harum.\n Voluptate asperiores saepe dignissimos dolorum quaerat, ducimus dolore ipsam quo quae nobis totam eaque beatae voluptas, culpa facere quis soluta aliquid voluptates.\n Ipsum voluptates vero quis quos accusamus?",
+            "files": [
+                "fin1.jpg",
+                "fin2.jpg",
+                "fin3.jpg",
+                "fin4.jpg",
+                "fin5.jpg",
+                "fin6.jpg"
+            ]
         }
     ]
 }

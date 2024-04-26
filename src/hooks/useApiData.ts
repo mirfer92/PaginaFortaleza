@@ -10,9 +10,9 @@ interface RequestProps {
 }
 
 const useApiData = (props: RequestProps) => {
-    const [data, setData] = useState<any>([]); 
-    const [isLoading, setIsLoading] = useState(true);
-    const [error, setError] = useState();
+    const [data, setData] = useState<any[]>([]); 
+    const [isLoading, setIsLoading] = useState<boolean>(true);
+    const [error, setError] = useState<any>();
     useEffect(() => {
         const getData = async () => {
             try {
@@ -26,11 +26,14 @@ const useApiData = (props: RequestProps) => {
             }
         };
         getData();
-    }, []);
+    }, [isLoading]);
     return {
         data,
         isLoading,
-        error
+        error,
+        setData,
+        setIsLoading,
+        setError
     }
 }
 

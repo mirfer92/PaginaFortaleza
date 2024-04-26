@@ -1,8 +1,7 @@
-import { RiInstagramFill } from '@remixicon/react';
-
 import './Header.css';
-import legend from '../../../assets/legend.png';
+import legend from '../../../assets/img/legend.png';
 import { Fragment } from 'react';
+import { getIconByKey } from '../../../utils/iconUtils';
 
 interface headerParams {
     data: {
@@ -16,11 +15,7 @@ interface headerParams {
 }
 
 function Header(props: headerParams) {
-    const logoMap: Map<string, JSX.Element> = new Map([
-        ['instagram', <RiInstagramFill size={0}/>]
-    ]);
-
-    const selectedLogo = logoMap.get(props.data.key) || <></>;
+    const selectedIcon = getIconByKey(props.data.key);
     const finalLegend = props.data.legend.split('\n');
 
     return (
@@ -41,7 +36,7 @@ function Header(props: headerParams) {
                             <div className='galleryHeader__linkContainer'>
                                 Para más contenido síguenos en&nbsp;
                                 <a href={props.data.url} className='gallery__link'>
-                                    {props.data.pageName} {selectedLogo}
+                                    {props.data.pageName} {selectedIcon}
                                 </a>
                             </div>
                             :

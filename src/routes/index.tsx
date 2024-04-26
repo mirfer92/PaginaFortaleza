@@ -4,7 +4,7 @@ import {
 } from "react-router-dom";
 import LandingPage from "../views/LandingPage";
 import ContactUs from "../views/ContactUs";
-import ExternalGallery from "../views/ExternalGallery";
+import Gallery from "../views/Gallery";
 
 const router = createBrowserRouter([
     {
@@ -16,17 +16,8 @@ const router = createBrowserRouter([
         element: <ContactUs/>
     },
     {
-        path: '/galeria',
-        children: [
-            {
-                path: 'externa/:keyParam',
-                element: <ExternalGallery/>
-            },
-            // {
-            //     path: ':key',
-            //     element: <StaticGallery/>
-            // }
-        ]
+        path: '/galeria/:isExternal/:key',
+        element: <Gallery/>
     },
 ]);
 

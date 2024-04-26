@@ -1,6 +1,6 @@
 import './NavbarLogo.css';
-import aguayo from '../../../../assets/aguayo.jpg';
-import logo_15 from '../../../../assets/logo_15.jpg';
+import aguayo from '../../../../assets/img/aguayo.jpg';
+import logo_15 from '../../../../assets/img/logo_15.jpg';
 
 function NavbarLogo() {
     return (

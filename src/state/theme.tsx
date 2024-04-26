@@ -4,8 +4,8 @@ import { persist } from 'zustand/middleware'
 const useGalleryTheme = create(
     persist(
         (set) => ({
-            theme: 'classic',
-            setClassic: () => set({ theme: 'classic'}),
+            theme: 'grid',
+            setGrid: () => set({ theme: 'grid'}),
             setCarousel: () => set({ theme: 'carousel'}),
         }),
         {name: 'galleryTheme'}

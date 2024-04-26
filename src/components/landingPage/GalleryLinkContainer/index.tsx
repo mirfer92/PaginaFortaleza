@@ -1,6 +1,6 @@
-import gal1 from '../../../assets/gal1.jpg';
-import gal2 from '../../../assets/gal2.jpg';
-import gal3 from '../../../assets/gal3.jpg';
+import gal1 from '../../../assets/img/gal1.jpg';
+import gal2 from '../../../assets/img/gal2.jpg';
+import gal3 from '../../../assets/img/gal3.jpg';
 import './GalleryLinkContainer.css';
 
 import GalleryLink from './GalleryLink';
@@ -8,7 +8,7 @@ import GalleryLink from './GalleryLink';
 function GalleryLinkContainer () {
     const galleries = [
         {
-            url: 'galeria/herencias',
+            url: 'galeria/exclusiva/herencias',
             title: 'Herencias',
             background: gal1
         },
@@ -18,7 +18,7 @@ function GalleryLinkContainer () {
             background: gal2
         },
         {
-            url: 'galeria/fin-de-año-2023',
+            url: 'galeria/exclusiva/fin-de-año-2023',
             title: 'Gala de Fin de Año 2023',
             background: gal3
         },

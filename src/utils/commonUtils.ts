@@ -5,7 +5,8 @@ interface GalleryData {
     key: string,
     title: string,
     legend: string,
-    url?: string
+    url?: string,
+    files: string[]
 }
 
 export function camelize(str: string) {

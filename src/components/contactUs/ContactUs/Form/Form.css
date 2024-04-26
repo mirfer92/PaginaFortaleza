@@ -1,0 +1,104 @@
+.contactUs__form__form{
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+}
+
+.contactUs__form__item{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactUs__form__item label{
+    font-size: 0.8em;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.contactUs__form__item input,
+.contactUs__form__item textarea {
+    background-color: black;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid var(--aqua-fortaleza);
+    color: #ffffff;
+    width: 70%;
+    align-self: center;
+    transition-property: width;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    font-family: inherit;
+    font-size: 1em;
+}
+
+.contactUs__form__item textarea {
+    font-size: 0.8em;
+}
+
+.contactUs__form__item .PhoneInput{
+    display: flex;
+    justify-content: center;
+}
+
+.contactUs__form__item .PhoneInputInput{
+    flex: none;
+    width: 60%;
+}
+
+.contactUs__form__item > input:focus,
+.contactUs__form__item > textarea:focus{
+    width: 85%;
+}
+
+.contactUs__form__item .PhoneInputInput:focus{
+    width: 75%;
+}
+
+.contactUs__form__item span{
+    font-size: 0.7em;
+    color:#bbbbbb;
+    font-style: italic;
+    margin-left: 25px;
+}
+
+.contactUs__form__requiredFields{
+    margin-top: 30px;
+    font-size: 0.7em;
+}
+
+.contactUs__form_buttonContainer{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.contactUs__form__button{
+    width: 30%;
+    padding: 5px;
+    margin-top: 10px;
+    background-color: #000000;
+    border: 1px solid #cccccc;
+    border-radius: 20px;
+    color: #ffffff;
+    text-align: center;
+    font-family: inherit;
+    font-size: 1.2em;
+    font-weight: 500;
+    transition-property: transform background-color;
+    transition-duration: 0.5s;
+}
+
+.contactUs__form__button:hover{
+    cursor: pointer;
+    transform: scale(1.15);
+}
+
+.contactUs__form__button[type="submit"]:hover{
+    background-color: var(--aqua-fortaleza);
+}
+
+.contactUs__form__button[type="reset"]:hover{
+    background-color: #666666;
+}

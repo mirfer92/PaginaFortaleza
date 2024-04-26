@@ -5,7 +5,6 @@ import './Navbar.css';
 import { removeCurrentUrlPath } from "../../../utils/commonUtils";
 
 function Navbar() {
-
     const navbarItems = removeCurrentUrlPath();
 
     return (

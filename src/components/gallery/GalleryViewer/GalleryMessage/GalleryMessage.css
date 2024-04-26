@@ -1,0 +1,82 @@
+.galleryMessage{
+    margin: 50px auto;
+    border: 3px solid #fff;
+    width: fit-content;
+    padding: 30px 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.galleryMessage *{
+    text-align: center;
+    width: 100%;
+    color: var(--aqua-fortaleza);
+}
+
+.galleryMessage__logo{
+    width: 140px;
+    height: 140px;
+    margin: 15px auto;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px #ffffff;
+    overflow: hidden;
+}
+
+.galleryMessage__logo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.galleryMessage__message{
+    margin-top: 10px;
+}
+
+.galleryMessage__message__link{
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    transition: .5s ease-in-out font-size;
+}
+
+.galleryMessage__message__link:hover{
+    font-size: 1.1em;
+}
+
+.galleryMessage__message__link__icon, .galleryMessage__message__link > svg{
+    width: 1.2em;
+    height: 1.2em;
+    transition: .5s transform ease-in-out;
+    fill: #fff;
+}
+
+.galleryMessage__message__link:hover > .galleryMessage__message__link__icon,
+.galleryMessage__message__link:hover > svg{
+    transform: scale(1.1);
+}
+
+.galleryMessage__reload {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.galleryMessage__reload  *{
+    width: fit-content;
+}
+
+.galleryMessage__reload  h4{
+    font-weight: 500;
+}
+
+.galleryMessage__reload > svg{ 
+    transition: 2s transform linear;
+}
+
+.galleryMessage__reload:hover > svg {
+    transform: rotate(360deg);
+}

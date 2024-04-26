@@ -1,4 +1,4 @@
-import logo from '../../../assets/logo_main.jpg';
+import logo from '../../../assets/img/logo_main.jpg';
 
 import {
     RiHome3Fill,

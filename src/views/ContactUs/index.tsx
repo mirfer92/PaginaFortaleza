@@ -1,15 +1,15 @@
 import Navbar from '../../components/common/Navbar';
-import Contact from '../../components/contactUs/Contact';
+import Info from '../../components/contactUs/Info';
+import Contact from '../../components/contactUs/ContactUs';
 import Footer from '../../components/common/Footer';
-import Comments from '../../components/contactUs/Comments/Comments';
 
 
 function ContactUs() {
     return (
         <>
             <Navbar/>
+            <Info/>
             <Contact/>
-            <Comments/>
             <Footer/>
         </>
     )
