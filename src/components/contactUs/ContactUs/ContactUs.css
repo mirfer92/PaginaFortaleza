@@ -34,10 +34,6 @@
     text-align: center;
 }
 
-.contactUs__form__success__comeBack{
-    margin-top: 40px;
-}
-
 .contactUs__form__success__icon{
     width: 24px;
     height: 24px;
@@ -57,6 +53,10 @@
 .contactUs__form__success__logo img{
     width: 100%;
     margin-top: -10px;
+}
+
+div.contactUs__form__success__comeBack{
+    margin-top: 20px;
 }
 
 .contactUs__form__success__comeBack:hover{

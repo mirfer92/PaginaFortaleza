@@ -27,7 +27,7 @@ function MyMap() {
             <h2 className="infoContainer__map__title">Visítanos en la Academia</h2>
             <div className="infoContainer__map__googleMap">
                 <GoogleMapReact
-                    bootstrapURLKeys={{ key: "AIzaSyDFomk4MiZliMf29NbWyMQOccO6fTZZ-LY" }}
+                    bootstrapURLKeys={{ key: import.meta.env.VITE_GOOGLE_MAPS_KEY }}
                     defaultCenter={location}
                     defaultZoom={17}>
                     <LocationPin
